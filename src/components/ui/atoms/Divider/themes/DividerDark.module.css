@@ -1,0 +1,17 @@
+.horizontal {
+  @apply border-t border-gray-700 bg-transparent;
+}
+
+.vertical {
+  @apply border-l border-gray-700 bg-transparent;
+  min-height: 24px;
+  margin: 0 8px;
+}
+
+.solid {
+  border-style: solid;
+}
+
+.dashed {
+  border-style: dashed;
+}

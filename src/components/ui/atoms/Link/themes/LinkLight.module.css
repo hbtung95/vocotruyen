@@ -1,0 +1,4 @@
+.link {
+  /* Hiệu ứng glass hoặc hover accent nếu muốn */
+  transition: color 0.2s, background 0.2s;
+}

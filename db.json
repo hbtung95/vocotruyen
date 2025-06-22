@@ -1,0 +1,10 @@
+{
+  "athletes": [
+    { "id": 1, "name": "Nguyễn Văn A", "gender": "Nam", "club": "CLB Alpha", "email": "a@gmail.com", "status": "active" },
+    { "id": 2, "name": "Trần Thị B", "gender": "Nữ", "club": "CLB Beta", "email": "b@gmail.com", "status": "inactive" }
+  ],
+  "clubs": [
+    { "id": 1, "name": "CLB Alpha", "city": "Hà Nội" },
+    { "id": 2, "name": "CLB Beta", "city": "TP HCM" }
+  ]
+}

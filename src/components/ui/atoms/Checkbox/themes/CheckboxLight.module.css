@@ -1,0 +1,9 @@
+.checkbox {
+  @apply bg-white border border-gray-300 text-accent transition focus:ring-2 focus:ring-accent;
+}
+.indeterminate {
+  /* Custom style cho trạng thái indeterminate, ví dụ nền vàng hoặc gạch ngang */
+  background-color: #ffe066;
+  border-color: #e6c200;
+  /* Có thể vẽ icon hoặc content CSS tùy ý */
+}

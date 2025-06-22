@@ -1,0 +1,13 @@
+.primary {
+  /* Liquid Glass – Nút chính */
+  @apply bg-accent/80 text-white backdrop-blur-xl;
+  /* Bạn có thể custom thêm hiệu ứng glass tại đây */
+  box-shadow: 0 4px 16px rgba(10,132,255,0.12);
+  border: none;
+}
+
+.secondary {
+  /* Nút secondary trên nền sáng */
+  @apply bg-white/30 text-accent backdrop-blur-lg border border-accent/30;
+  box-shadow: 0 2px 6px rgba(10,132,255,0.07);
+}

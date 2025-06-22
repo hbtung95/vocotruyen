@@ -1,0 +1,83 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ========== USERS ==========
+    match /users/{userId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth.uid == userId;
+    }
+
+    // ========== CLUBS ==========
+    match /clubs/{clubId} {
+      allow read: if request.auth != null;
+      allow write: if isAdmin();
+    }
+
+    // ========== ATHLETES ==========
+    match /athletes/{athleteId} {
+      allow read: if isAdmin() || isCoachOf(resource.data.clubId) || isSelf(athleteId);
+      allow create: if isCoachOf(request.resource.data.clubId);
+      allow update, delete: if isCoachOf(resource.data.clubId);
+    }
+
+    // ========== COMPETITIONS ==========
+    match /competitions/{compId} {
+      allow read: if request.auth != null;
+      allow write: if isAdmin();
+    }
+
+    // ========== TEAMS ==========
+    match /teams/{teamId} {
+      allow read: if request.auth != null;
+      allow write: if isCoachOf(request.resource.data.clubId);
+    }
+
+    // ========== SCHEDULES ==========
+    match /schedules/{scheduleId} {
+      allow read: if isAdmin() || isCoach() || isReferee() || isAthlete();
+      allow write: if isAdmin();
+    }
+
+    // ========== RESULTS ==========
+    match /results/{resultId} {
+      allow read: if isAdmin() || isCoach() || isReferee() || isAthlete();
+      allow write: if isReferee();
+    }
+
+    // ========== SCORINGS ==========
+    match /scorings/{scoringId} {
+      allow read: if isReferee() && resource.data.refereeId == request.auth.uid;
+      allow create: if isReferee() && request.resource.data.refereeId == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    // ===============================
+    // 🔐 ROLE-BASED HELPER FUNCTIONS
+    // ===============================
+    function isAdmin() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == "Admin";
+    }
+
+    function isCoach() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == "Coach";
+    }
+
+    function isReferee() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == "Referee";
+    }
+
+    function isAthlete() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == "Athlete";
+    }
+
+    function isSelf(id) {
+      return request.auth.uid == id;
+    }
+
+    function isCoachOf(clubId) {
+      return isCoach() &&
+             get(/databases/$(database)/documents/clubs/$(clubId)).data.coachId == request.auth.uid;
+    }
+  }
+}

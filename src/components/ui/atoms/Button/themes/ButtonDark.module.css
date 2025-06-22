@@ -1,0 +1,10 @@
+.primary {
+  @apply bg-accent/90 text-white backdrop-blur-xl;
+  box-shadow: 0 4px 16px rgba(10,132,255,0.18);
+  border: none;
+}
+
+.secondary {
+  @apply bg-dark/40 text-accent backdrop-blur-lg border border-accent/30;
+  box-shadow: 0 2px 6px rgba(10,132,255,0.14);
+}

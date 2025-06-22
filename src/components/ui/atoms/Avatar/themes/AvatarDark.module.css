@@ -1,0 +1,8 @@
+.bordered {
+  box-shadow: 0 0 0 2px rgba(10, 132, 255, 0.7);
+}
+
+.placeholder {
+  background: linear-gradient(135deg, #262b36 0%, #181c22 100%);
+  color: #aaa;
+}

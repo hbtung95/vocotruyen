@@ -1,0 +1,14 @@
+.bar {
+  /* Glass + shadow nhẹ cho bar nền */
+  box-shadow: 0 1px 5px rgba(10,132,255,0.06);
+}
+
+.indeterminate {
+  background: linear-gradient(90deg, #2563eb66 25%, #93c5fd 50%, #2563eb66 75%);
+  animation: progressIndeterminate 1.6s infinite linear;
+}
+@keyframes progressIndeterminate {
+  0% { left: -40%; width: 40%; }
+  60% { left: 100%; width: 60%; }
+  100% { left: 100%; width: 60%; }
+}

@@ -1,0 +1,18 @@
+.slider::-webkit-slider-thumb {
+  @apply w-4 h-4 bg-accent rounded-full shadow-md;
+  appearance: none;
+  border: 2px solid #fff;
+  transition: background 0.2s;
+}
+.slider:focus::-webkit-slider-thumb {
+  @apply bg-accent;
+}
+.slider::-moz-range-thumb {
+  @apply w-4 h-4 bg-accent rounded-full border-2 border-white;
+}
+.slider::-ms-thumb {
+  @apply w-4 h-4 bg-accent rounded-full border-2 border-white;
+}
+.slider::-webkit-slider-thumb:hover {
+  background: #1e40af;
+}

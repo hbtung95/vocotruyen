@@ -1,0 +1,7 @@
+.bar {
+  box-shadow: 0 1px 8px rgba(30, 41, 59, 0.19);
+}
+.indeterminate {
+  background: linear-gradient(90deg, #2563eb44 25%, #7dd3fc 50%, #2563eb44 75%);
+  animation: progressIndeterminate 1.6s infinite linear;
+}
