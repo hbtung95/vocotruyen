@@ -1,0 +1,15 @@
+.skeleton {
+  background: linear-gradient(90deg, #23262b 25%, #31343b 37%, #23262b 63%);
+  background-size: 400% 100%;
+  border-radius: 6px;
+}
+.animate {
+  animation: skeleton-shimmer 1.3s linear infinite;
+}
+@keyframes skeleton-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+.text { min-height: 16px; }
+.rect { }
+.circle, .avatar { border-radius: 50%; }

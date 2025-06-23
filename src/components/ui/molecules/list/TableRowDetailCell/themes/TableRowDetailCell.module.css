@@ -1,0 +1,58 @@
+.detailCellRow {
+  background: #f8fbff;
+  border-bottom: 1.5px solid #e8edf5;
+  transition: max-height 0.22s, padding 0.22s;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+.detailPanel {
+  padding: 20px 30px;
+  font-size: 1.01em;
+  color: #25384a;
+  line-height: 1.7;
+  flex: 1;
+  min-width: 0;
+  background: none;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 22;
+  background: #f8fbff;
+  box-shadow: 0 8px 30px -16px rgba(90,120,170,0.08);
+}
+.highlight {
+  background: #eaffec;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-left: auto;
+}
+.closeBtn {
+  border: none;
+  background: none;
+  color: #b9c4d8;
+  font-size: 1.22em;
+  margin-left: 14px;
+  margin-top: 2px;
+  cursor: pointer;
+  transition: color 0.13s;
+}
+.closeBtn:hover {
+  color: #ee4444;
+}
+.loading {
+  color: #ffaa33;
+  font-size: 1.06em;
+  margin-right: 16px;
+}
+.error {
+  color: #e94f44;
+  font-weight: 600;
+  margin-right: 16px;
+}

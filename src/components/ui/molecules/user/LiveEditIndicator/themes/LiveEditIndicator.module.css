@@ -1,0 +1,9 @@
+
+---
+
+### **themes/LiveEditIndicator.module.css** *(nếu cần)*
+
+```css
+.live-edit-glow {
+  box-shadow: 0 0 0 2px #60A5FA, 0 2px 8px rgba(16, 185, 129, 0.12);
+}

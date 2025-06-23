@@ -1,0 +1,52 @@
+.chipBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px 8px 6px;
+  background: #f6f8ff;
+  border-radius: 12px;
+  min-height: 36px;
+  margin-bottom: 2px;
+}
+.chip {
+  display: flex;
+  align-items: center;
+  background: #eaf2ff;
+  color: #2470db;
+  border-radius: 16px;
+  padding: 4px 11px 4px 10px;
+  font-size: 0.98em;
+  font-weight: 500;
+  gap: 5px;
+  box-shadow: 0 2px 4px rgba(20,80,200,0.04);
+  transition: background 0.12s;
+}
+.chip:hover {
+  background: #d4e8ff;
+}
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 1.1em;
+  color: #6d7fb3;
+  cursor: pointer;
+  margin-left: 2px;
+  border-radius: 50%;
+  padding: 1px 5px 1px 3px;
+  line-height: 1;
+  transition: background 0.13s;
+}
+.closeBtn:hover {
+  background: #deefff;
+  color: #e94f44;
+}
+.clearAllBtn {
+  background: none;
+  border: none;
+  color: #e94f44;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.97em;
+  margin-left: 16px;
+}

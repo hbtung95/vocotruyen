@@ -1,0 +1,25 @@
+import React from "react";
+import { {{entity}}{{variant}}Props } from "./{{entity}}{{variant}}.types";
+import styles from "../themes/{{entity}}{{variant}}.module.css";
+
+const {{entity}}{{variant}}: React.FC<{{entity}}{{variant}}Props> = ({
+  name,
+  avatarUrl,
+  rank,
+  highlight,
+  onClick,
+}) => (
+  <div
+    className={`${styles.{{variantLower}}} ${highlight ? styles.highlight : ""}`}
+    onClick={onClick}
+    tabIndex={0}
+  >
+    <img className={styles.avatar} src={avatarUrl} alt={name} />
+    <div className={styles.info}>
+      <span className={styles.name}>{name}</span>
+      {rank && <span className={styles.rank}>{rank}</span>}
+    </div>
+  </div>
+);
+
+export default {{entity}}{{variant}};

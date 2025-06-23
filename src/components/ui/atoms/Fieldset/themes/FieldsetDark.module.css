@@ -1,0 +1,11 @@
+.fieldset {
+  background: #23262b;
+  border-color: #32343c;
+}
+.legend {
+  color: #6ccfff;
+}
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}

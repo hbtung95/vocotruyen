@@ -1,0 +1,15 @@
+
+---
+
+### **themes/ImpersonateSwitch.module.css**
+
+```css
+.impersonateBanner {
+  /* Tuỳ chọn thêm hiệu ứng warning, shadow, animation */
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.12); }
+}

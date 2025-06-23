@@ -1,0 +1,9 @@
+
+---
+
+### **themes/StatusBadge.module.css** *(nếu cần)*
+
+```css
+.status-badge-glow {
+  box-shadow: 0 0 4px 1px rgba(100,200,150,0.10);
+}

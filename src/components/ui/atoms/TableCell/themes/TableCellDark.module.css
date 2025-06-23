@@ -1,0 +1,41 @@
+.cell {
+  border-bottom: 1.5px solid #32343c;
+  background: #23262b;
+  color: #fff;
+}
+.header {
+  background: #2a2e36;
+  color: #6ccfff;
+}
+.sm {
+  font-size: 12px;
+}
+.md {
+  font-size: 14px;
+}
+.lg {
+  font-size: 16px;
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.text {}
+.number {}
+.icon {}
+.status {}
+.action {}
+.sortable {
+  cursor: pointer;
+}
+.sorted {
+  color: #4591e6;
+}
+.sortIcon {
+  font-size: 1em;
+}

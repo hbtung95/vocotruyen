@@ -1,0 +1,82 @@
+.importWrap {
+  display: inline-block;
+  position: relative;
+}
+.importBtn {
+  background: #f5fffa;
+  border: 1px solid #ccd2e3;
+  border-radius: 7px;
+  padding: 7px 18px 7px 13px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 500;
+  min-width: 90px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.importBtn:disabled {
+  background: #f2f4f7;
+  color: #bbb;
+  cursor: not-allowed;
+}
+.popup {
+  position: absolute;
+  min-width: 240px;
+  background: #fff;
+  border: 1px solid #e0eaf2;
+  border-radius: 11px;
+  box-shadow: 0 8px 32px rgba(0,20,40,0.14);
+  z-index: 1101;
+  padding: 15px 17px 12px 17px;
+  margin-top: 10px;
+  right: 0;
+}
+.dropZone {
+  background: #f1f6fd;
+  border: 2px dashed #9eb8db;
+  border-radius: 12px;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4267ac;
+  font-size: 1.08em;
+  margin-bottom: 12px;
+  cursor: pointer;
+  padding: 14px 8px;
+  transition: border-color 0.13s;
+}
+.dropZone:hover, .dropZone.dragover {
+  border-color: #1677ff;
+  background: #e6f1fe;
+}
+.fileLabel {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.progress {
+  height: 4px;
+  background: #47d16a;
+  border-radius: 2px;
+  margin: 10px 0;
+}
+.errorMsg {
+  color: #e94f44;
+  font-size: 0.98em;
+  margin-top: 7px;
+}
+.formatBtns {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 9px;
+}
+.demoBtn {
+  background: none;
+  border: none;
+  color: #1677ff;
+  text-decoration: underline;
+  font-size: 0.97em;
+  cursor: pointer;
+}

@@ -1,0 +1,6 @@
+import { {{entity}}Props } from "../{{entity}}.types";
+
+export interface {{entity}}{{variant}}Props
+  extends Pick<{{entity}}Props, "id" | "name" | "avatarUrl" | "rank" | "onClick"> {
+  highlight?: boolean;
+}

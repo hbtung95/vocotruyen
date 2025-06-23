@@ -1,11 +1,44 @@
 {
   "scripts": {
-    "gen:atoms": "node scripts/gen-atoms-index.js"
+    "plop": "plop",
+    "check:molecules": "node scripts/check-molecules-structure.js",
+    "gen:molecule-index": "node scripts/gen-molecule-index.js",
+    "gen:atoms": "node scripts/gen-atoms-index.js",
+    "gen:barrels": "node scripts/gen-barrels.js",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "gen:entities-index": "node scripts/gen-entities-index.js",
+    "gen:stories": "node scripts/gen-all-entities-stories.js"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.4",
     "@radix-ui/react-dialog": "^1.1.14",
     "@radix-ui/react-dropdown-menu": "^2.1.15",
-    "@radix-ui/react-toast": "^1.2.14"
+    "@radix-ui/react-toast": "^1.2.14",
+    "react": "^19.1.0",
+    "ts-morph": "^26.0.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^4.0.1",
+    "@storybook/addon-a11y": "^9.0.12",
+    "@storybook/addon-docs": "^9.0.12",
+    "@storybook/addon-vitest": "^9.0.12",
+    "@storybook/react-vite": "^9.0.12",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^30.0.0",
+    "@types/react": "^19.1.8",
+    "@types/testing-library__react": "^10.2.0",
+    "@vitest/browser": "^3.2.4",
+    "@vitest/coverage-v8": "^3.2.4",
+    "husky": "^9.1.7",
+    "jest": "^30.0.2",
+    "lint-staged": "^16.1.2",
+    "playwright": "^1.53.1",
+    "prop-types": "^15.8.1",
+    "storybook": "^9.0.12",
+    "vitest": "^3.2.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "prettier --write"
   }
 }

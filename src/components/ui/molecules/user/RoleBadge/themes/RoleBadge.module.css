@@ -1,0 +1,10 @@
+
+---
+
+### **themes/RoleBadge.module.css**
+
+```css
+.roleBadge {
+  /* Thêm hiệu ứng glass, border, animation nếu muốn */
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}

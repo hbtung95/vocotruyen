@@ -1,0 +1,86 @@
+.attachmentCell {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 76px;
+  padding: 2px 0;
+  font-size: 1em;
+  font-weight: 500;
+  user-select: text;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.attachBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 6px;
+  padding: 3px 10px 3px 6px;
+  background: #f8fafc;
+  border: 1.1px solid #eef2f6;
+  margin-right: 3px;
+  min-width: 0;
+  max-width: 210px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.13s;
+}
+.attachBox:focus,
+.attachBox:hover {
+  background: #eef4fd;
+}
+.icon {
+  font-size: 1.14em;
+  margin-right: 2px;
+}
+.name {
+  font-size: 0.97em;
+  color: #234585;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 122px;
+}
+.size {
+  font-size: 0.91em;
+  color: #7899bb;
+  margin-left: 7px;
+}
+.uploading {
+  color: #ffaa33;
+  font-size: 0.96em;
+  margin-left: 7px;
+}
+.error {
+  color: #e94f44;
+  font-weight: 700;
+  text-decoration: line-through;
+  margin-left: 7px;
+}
+.actionBtn {
+  background: none;
+  border: none;
+  color: #2979ff;
+  cursor: pointer;
+  margin-left: 7px;
+  font-size: 1em;
+}
+.actionBtn:disabled {
+  color: #bbb;
+  cursor: not-allowed;
+}
+.highlight {
+  background: #e6fff6;
+  border-radius: 7px;
+  padding: 3px 8px;
+}
+.more {
+  color: #6c7499;
+  font-size: 0.93em;
+  font-weight: 500;
+  margin-left: 3px;
+}
+.disabled {
+  opacity: 0.47;
+  pointer-events: none;
+}

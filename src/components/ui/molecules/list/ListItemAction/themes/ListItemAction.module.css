@@ -1,0 +1,11 @@
+.actionItemGlass {
+  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,0.16);
+}
+.selected {
+  background: rgba(20,130,255,0.12);
+}
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}

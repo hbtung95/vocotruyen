@@ -1,0 +1,15 @@
+.circle {
+  background: none;
+}
+.track {
+  stroke: #e0e6ed;
+  opacity: 0.6;
+  transition: stroke 0.18s;
+}
+.progress {
+  transition: stroke-dashoffset 0.26s, stroke 0.18s;
+}
+.label {
+  color: #1976d2;
+  font-size: 0.85em;
+}

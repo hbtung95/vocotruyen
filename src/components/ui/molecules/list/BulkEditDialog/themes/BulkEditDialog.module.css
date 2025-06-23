@@ -1,0 +1,35 @@
+.dialogBackdrop {
+  background: rgba(30,36,60,0.26);
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+}
+.dialogCard {
+  min-width: 340px;
+  max-width: 94vw;
+  margin: 9vh auto;
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0 6px 42px rgba(30,50,100,0.14);
+  padding: 30px 22px 22px 22px;
+  position: relative;
+  z-index: 1001;
+}
+.dialogTitle {
+  font-size: 1.16rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #243353;
+}
+.formRow {
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.btnGroup {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}

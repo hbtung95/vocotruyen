@@ -22,3 +22,4 @@ export const Color: Story = { args: { name: "x", color: "#e53e3e" } };
 export const AsButton = () => (
   <IconButton name="x" aria-label="Đóng" color="#e53e3e" onClick={() => alert("Clicked!")} />
 );
+

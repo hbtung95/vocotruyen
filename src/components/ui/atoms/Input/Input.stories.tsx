@@ -36,3 +36,4 @@ export const WithLeftIcon: Story = {
 
 export const Password = () => <InputPassword label="Mật khẩu" />;
 export const Search = () => <InputSearch />;
+

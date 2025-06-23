@@ -1,0 +1,8 @@
+.overlay {
+  transition: opacity 0.18s;
+}
+.overlayGlass {
+  /* Hiệu ứng glass, mờ nền, blur MacOS */
+  backdrop-filter: blur(10px) saturate(160%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%);
+}

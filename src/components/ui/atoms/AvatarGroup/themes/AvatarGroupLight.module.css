@@ -1,0 +1,11 @@
+.group {
+  /* Optional custom for group */
+}
+.avatar {
+  transition: box-shadow 0.16s, border 0.16s;
+  background: #eee;
+}
+.overflow {
+  transition: background 0.16s;
+  background: #e0e6f2;
+}

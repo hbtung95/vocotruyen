@@ -1,0 +1,12 @@
+
+---
+
+### **f. themes/UserCard.module.css**  
+*(Nếu cần style riêng ngoài Tailwind, thường chỉ dùng cho hiệu ứng đặc biệt)*
+
+```css
+/* Ví dụ: Glassmorphism effect hoặc animation riêng */
+.user-card-glass {
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.1);
+}

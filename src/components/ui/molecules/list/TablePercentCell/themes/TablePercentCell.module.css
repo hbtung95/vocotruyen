@@ -1,0 +1,60 @@
+.percentCell {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 68px;
+  padding: 2px 0;
+  font-size: 1.01em;
+  font-weight: 500;
+  user-select: text;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.positive {
+  color: #1f9e53;
+}
+.negative {
+  color: #e94f44;
+}
+.bold {
+  font-weight: 700;
+  font-size: 1.09em;
+}
+.icon {
+  font-size: 1.05em;
+}
+.copied {
+  color: #2cc642;
+  margin-left: 5px;
+  font-size: 0.95em;
+}
+.highlight {
+  background: #e6fff6;
+  border-radius: 8px;
+  padding: 3px 10px;
+}
+.error {
+  color: #c1272d;
+  text-decoration: line-through;
+  font-weight: 600;
+}
+.barWrap {
+  width: 42px;
+  height: 7px;
+  background: #eaf8ef;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 7px;
+}
+.bar {
+  height: 100%;
+  border-radius: 5px;
+  background: #29ba55;
+  transition: width 0.18s;
+}
+.barNegative {
+  background: #e94f44;
+}
+.label {
+  min-width: 34px;
+}

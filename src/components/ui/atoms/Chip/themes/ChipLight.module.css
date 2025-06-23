@@ -1,0 +1,60 @@
+.chip {
+  padding-left: 12px;
+  padding-right: 12px;
+  background: #f4f7fa;
+  color: #222;
+  border: none;
+  user-select: none;
+  transition: background 0.2s;
+}
+.accent {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+.success {
+  background: #e9fbe6;
+  color: #22996a;
+}
+.error {
+  background: #ffebee;
+  color: #d32f2f;
+}
+.info {
+  background: #e1f5fe;
+  color: #0288d1;
+}
+.warning {
+  background: #fffde7;
+  color: #ef6c00;
+}
+.neutral {
+  background: #f0f0f0;
+  color: #555;
+}
+.sm {
+  height: 22px;
+  font-size: 12px;
+  padding: 0 8px;
+}
+.md {
+  height: 28px;
+  font-size: 14px;
+  padding: 0 12px;
+}
+.lg {
+  height: 36px;
+  font-size: 16px;
+  padding: 0 18px;
+}
+.icon {
+  font-size: 1em;
+}
+.close {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  margin-left: 2px;
+  border-radius: 50%;
+  outline: none;
+}

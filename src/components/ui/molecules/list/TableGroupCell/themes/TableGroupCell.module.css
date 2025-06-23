@@ -1,0 +1,59 @@
+.groupCell {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 60px;
+  padding: 5px 0;
+  font-size: 1.05em;
+  font-weight: 600;
+  color: #2c3c55;
+  user-select: none;
+  cursor: pointer;
+  background: #f8fbff;
+  border-bottom: 1.5px solid #e8edf5;
+  transition: background 0.16s;
+}
+.icon {
+  font-size: 1.13em;
+}
+.arrow {
+  display: inline-block;
+  width: 17px;
+  text-align: center;
+  transition: transform 0.18s;
+  color: #7a97e1;
+  font-size: 1.12em;
+  margin-right: 1px;
+}
+.arrowExpanded {
+  transform: rotate(90deg);
+}
+.label {
+  margin-right: 10px;
+  font-weight: 600;
+  color: #233253;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 220px;
+}
+.count {
+  font-size: 0.94em;
+  color: #6181b7;
+  margin-left: 6px;
+  font-weight: 500;
+}
+.bold {
+  font-weight: 800;
+}
+.highlight {
+  background: #ecfff4;
+  border-radius: 8px;
+  color: #199943;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-left: auto;
+}

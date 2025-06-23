@@ -1,0 +1,28 @@
+.alert {
+  border-width: 1.5px;
+  border-style: solid;
+  background: #23262b;
+}
+.info {
+  border-color: #6ccfff;
+  color: #45b0e3;
+  background: #1e2836;
+}
+.success {
+  border-color: #64e69e;
+  color: #36c070;
+  background: #173528;
+}
+.warning {
+  border-color: #ffdb8e;
+  color: #cf980a;
+  background: #382c1b;
+}
+.error {
+  border-color: #ff9090;
+  color: #ff6262;
+  background: #3c1e25;
+}
+.icon {
+  font-size: 1.3em;
+}

@@ -1,0 +1,18 @@
+.button {
+  background: #282b31;
+  color: #eee;
+  border: 1.5px solid #32343c;
+}
+.active {
+  background: #4591e6;
+  color: #fff;
+  border-color: #4591e6;
+}
+.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.icon {
+  background: #23262b;
+  color: #aaa;
+}

@@ -1,0 +1,11 @@
+.stickyHeader {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.97);
+  z-index: var(--z-index, 120);
+  transition: box-shadow 0.16s;
+  will-change: box-shadow;
+}
+.stuckShadow {
+  box-shadow: 0 2px 14px rgba(22, 119, 255, 0.09), 0 1px 0 rgba(60,80,150,0.02);
+}

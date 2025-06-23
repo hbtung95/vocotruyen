@@ -1,0 +1,31 @@
+.boolCell {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 54px;
+  padding: 3px 0;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+.icon {
+  font-size: 1.12em;
+  margin-right: 1px;
+  vertical-align: middle;
+}
+.true {
+  color: #31ba63;
+}
+.false {
+  color: #e94f44;
+}
+.label {
+  font-size: 0.98em;
+  margin-left: 2px;
+}
+.highlight {
+  background: #eaffea;
+  border-radius: 8px;
+  padding: 2px 12px;
+}

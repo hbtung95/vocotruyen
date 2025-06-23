@@ -1,0 +1,25 @@
+.button {
+  background: #fff;
+  color: #222;
+  border: 1px solid #e2e8f0;
+}
+.active {
+  background: #1976d2;
+  color: #fff;
+  border-color: #1976d2;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.05);
+}
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.icon {
+  background: #f4f7fa;
+  color: #888;
+}
+.button:hover:not(.active):not(.disabled),
+.button:focus-visible:not(.active):not(.disabled) {
+  background: #e3f2fd;
+  color: #1976d2;
+  border-color: #90caf9;
+}

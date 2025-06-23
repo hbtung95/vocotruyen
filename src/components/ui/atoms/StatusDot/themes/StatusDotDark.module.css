@@ -1,0 +1,26 @@
+.dot {
+}
+.success {
+  background: #56ef9b;
+  border-color: #27c16e;
+}
+.warning {
+  background: #ffcb70;
+  border-color: #ffa726;
+}
+.error {
+  background: #ff9090;
+  border-color: #ff6262;
+}
+.info {
+  background: #6ccfff;
+  border-color: #2196f3;
+}
+.offline {
+  background: #676a71;
+  border-color: #3d3e42;
+}
+.neutral {
+  background: #31343b;
+  border-color: #44454a;
+}

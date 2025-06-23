@@ -1,0 +1,15 @@
+.group {
+  background: #23262b;
+  border-color: #32343c;
+}
+.prepend {
+  background: #2a2e36;
+  color: #bbb;
+  border-color: #32343c;
+}
+.append {
+  background: #2a2e36;
+  color: #bbb;
+  border-color: #32343c;
+}
+.input {}

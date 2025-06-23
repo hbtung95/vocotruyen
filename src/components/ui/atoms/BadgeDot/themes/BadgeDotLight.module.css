@@ -1,0 +1,33 @@
+.dot {
+  background: #ee375a;
+  color: #fff;
+  box-shadow: 0 0 0 1px #fff;
+  font-weight: 600;
+  text-align: center;
+  transition: background 0.2s, color 0.2s;
+  position: relative;
+  z-index: 1;
+}
+.outlined {
+  border: 1.2px solid #fff;
+}
+.accent {
+  background: #ee375a;
+}
+.error {
+  background: #e53935;
+}
+.warning {
+  background: #ffa726;
+  color: #473b00;
+}
+.info {
+  background: #1976d2;
+}
+.success {
+  background: #27c16e;
+}
+.neutral {
+  background: #bdbdbd;
+  color: #222;
+}

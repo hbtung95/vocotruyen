@@ -37,3 +37,46 @@ import { ButtonSecondary } from "./variants/ButtonSecondary";
 - Để theme động, bạn dùng Context + import dynamic cho module CSS (advanced).
 
 Nếu cần thêm template cho variant ghost, icon, outline... hoặc tích hợp theme context, cứ hỏi nhé!
+
+# Button Atom Component
+
+Nút bấm chuẩn UI/UX – hỗ trợ variant, size, icon, loading, shape, theme, fullWidth, a11y.
+
+## Props
+
+| Prop       | Type                                              | Default   | Description                          |
+|------------|---------------------------------------------------|-----------|--------------------------------------|
+| `variant`  | `"primary" \| "secondary" \| "outline" \| "ghost" \| "link"` | `primary` | Kiểu nút                             |
+| `size`     | `"sm" \| "md" \| "lg"`                            | `md`      | Kích thước nút                       |
+| `iconLeft` | `React.ReactNode`                                 |           | Icon trái                            |
+| `iconRight`| `React.ReactNode`                                 |           | Icon phải                            |
+| `loading`  | `boolean`                                         | `false`   | Trạng thái loading                   |
+| `disabled` | `boolean`                                         | `false`   | Vô hiệu hoá                          |
+| `fullWidth`| `boolean`                                         | `false`   | Nút full chiều rộng                   |
+| `shape`    | `"pill" \| "rounded" \| "square"`                 | `rounded` | Bo góc                               |
+| ...        | ...                                               | ...       | Toàn bộ props `<button>`             |
+
+## Variants
+
+- **ButtonOutline**: Nút viền mảnh
+- **ButtonGhost**: Nút không viền
+- **ButtonLink**: Nút dạng link
+- **IconButton**: Nút chỉ có icon
+
+## Theme
+
+- Có Light/Dark, glass effect, hover, active, focus, shadow dễ custom trong CSS module.
+
+## Sử dụng
+
+```tsx
+import { Button } from "@/components/ui/atoms/Button";
+<Button variant="primary" size="lg" loading>Đang gửi...</Button>
+
+import ButtonOutline from "@/components/ui/atoms/Button/variants/ButtonOutline";
+<ButtonOutline>Viền Outline</ButtonOutline>
+
+import IconButton from "@/components/ui/atoms/Button/variants/IconButton";
+<IconButton aria-label="Search">
+  <svg width={20} height={20} fill="none" stroke="currentColor"><circle cx={10} cy={10} r={8}/></svg>
+</IconButton>

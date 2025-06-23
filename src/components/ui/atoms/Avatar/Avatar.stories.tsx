@@ -39,3 +39,4 @@ export const WithStatus = () => (
 export const Rounded = () => (
   <AvatarRounded src="https://randomuser.me/api/portraits/men/13.jpg" alt="Admin" />
 );
+

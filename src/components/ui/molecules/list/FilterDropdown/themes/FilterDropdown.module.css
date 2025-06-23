@@ -1,0 +1,62 @@
+.dropdownWrap {
+  position: relative;
+  display: inline-block;
+  min-width: 124px;
+}
+.triggerBtn {
+  background: #fff;
+  border: 1px solid #ccd2e3;
+  border-radius: 6px;
+  padding: 6px 11px;
+  font-size: 1em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 96px;
+  transition: border 0.12s;
+}
+.triggerBtn:disabled {
+  background: #f6f6f6;
+  cursor: not-allowed;
+}
+.dropdownMenu {
+  position: absolute;
+  min-width: 164px;
+  z-index: 999;
+  background: #fff;
+  border: 1px solid #d6d8e8;
+  border-radius: 10px;
+  margin-top: 6px;
+  box-shadow: 0 4px 24px rgba(0,20,40,0.13);
+  padding: 7px 0;
+  left: 0;
+  right: auto;
+}
+.right {
+  right: 0;
+  left: auto;
+}
+.option {
+  padding: 6px 15px;
+  cursor: pointer;
+  color: #232b44;
+  font-size: 1em;
+  border-radius: 6px;
+  transition: background 0.13s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.option.selected {
+  background: #1677ff11;
+  color: #1677ff;
+  font-weight: 600;
+}
+.option:not(.selected):hover {
+  background: #f2f5fc;
+}
+.checkMark {
+  font-size: 1.13em;
+  color: #2272e6;
+}

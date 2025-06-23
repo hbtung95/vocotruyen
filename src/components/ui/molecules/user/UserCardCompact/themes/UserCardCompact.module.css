@@ -1,0 +1,10 @@
+
+---
+
+### **themes/UserCardCompact.module.css** *(nếu cần)*
+
+```css
+.user-card-compact-glass {
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.12);
+}

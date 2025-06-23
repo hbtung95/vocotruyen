@@ -1,0 +1,29 @@
+.toast {
+  border-width: 1.2px;
+  border-style: solid;
+  background: #fff;
+}
+
+.info {
+  border-color: #2196f3;
+  color: #1976d2;
+  background: #e3f2fd;
+}
+.success {
+  border-color: #4caf50;
+  color: #256029;
+  background: #e9fbe6;
+}
+.warning {
+  border-color: #ffa726;
+  color: #a06c0d;
+  background: #fff8e1;
+}
+.error {
+  border-color: #e53935;
+  color: #ba1a1a;
+  background: #ffebee;
+}
+.icon {
+  font-size: 1.2em;
+}

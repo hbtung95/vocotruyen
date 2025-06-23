@@ -1,0 +1,9 @@
+
+---
+
+### **themes/UserLevelBadge.module.css** *(nếu cần)*
+
+```css
+.user-level-badge-glow {
+  box-shadow: 0 0 6px 2px rgba(139, 92, 246, 0.12);
+}

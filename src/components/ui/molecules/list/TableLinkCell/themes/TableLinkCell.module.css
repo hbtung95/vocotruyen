@@ -1,0 +1,38 @@
+.linkCell {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 80px;
+  padding: 3px 0;
+  font-size: 1em;
+  color: #2764e6;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: text;
+  text-decoration: underline;
+  outline: none;
+}
+.icon {
+  font-size: 1.13em;
+  color: #2272e6;
+}
+.highlight {
+  background: #e4f1ff;
+  border-radius: 6px;
+  padding: 2px 9px;
+}
+.invalid {
+  color: #e94f44;
+  text-decoration: line-through;
+  font-weight: 600;
+}
+.copied {
+  color: #2cc642;
+  margin-left: 5px;
+  font-size: 0.97em;
+}
+.tooltip {
+  font-size: 0.95em;
+  color: #8296c7;
+  margin-left: 8px;
+}

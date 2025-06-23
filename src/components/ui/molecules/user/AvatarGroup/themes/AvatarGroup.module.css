@@ -1,0 +1,10 @@
+
+---
+
+### **themes/AvatarGroup.module.css** *(nếu cần)*
+
+```css
+.avatar-group-overlap {
+  /* Custom glass or shadow effect nếu muốn */
+  box-shadow: 0 0 0 2px #fff;
+}

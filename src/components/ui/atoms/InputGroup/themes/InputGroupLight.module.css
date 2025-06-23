@@ -1,0 +1,14 @@
+.group {
+  transition: box-shadow 0.14s;
+}
+.prepend {
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+.append {
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+.input {
+  min-width: 0;
+}

@@ -1,0 +1,17 @@
+.wrapper {
+  position: relative;
+  background: #f0f4f8;
+  border-radius: 0.5rem;
+}
+.img {
+  border-radius: 0.5rem;
+}
+.glass {
+  backdrop-filter: blur(2px) saturate(120%);
+  -webkit-backdrop-filter: blur(2px) saturate(120%);
+}
+.fallback {
+  background: #f0f0f0;
+  color: #bdbdbd;
+  font-size: 1.1em;
+}

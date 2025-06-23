@@ -1,0 +1,47 @@
+.switcherBar {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-radius: 8px;
+  background: #f6f8fc;
+  padding: 4px 7px;
+  min-height: 36px;
+}
+.tabBtn, .segBtn {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1em;
+  font-weight: 500;
+  color: #4760a7;
+  cursor: pointer;
+  padding: 7px 15px;
+  border-radius: 6px;
+  transition: background 0.13s, color 0.13s;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.tabBtn.active, .segBtn.active {
+  background: #1677ff11;
+  color: #1677ff;
+  font-weight: 700;
+}
+.tabBtn:hover, .segBtn:hover {
+  background: #dde8fa;
+}
+.sm { font-size: 0.94em; padding: 5px 10px; }
+.lg { font-size: 1.11em; padding: 9px 22px; }
+.segmentedBar {
+  background: #e5edfb;
+  border-radius: 8px;
+  padding: 4px;
+  gap: 5px;
+}
+.segBtn {
+  background: none;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 17px;
+  margin: 0 1px;
+}

@@ -1,0 +1,41 @@
+.currencyCell {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 84px;
+  padding: 3px 0;
+  font-size: 1.01em;
+  font-weight: 500;
+  user-select: text;
+  cursor: pointer;
+  color: #234585;
+  justify-content: flex-end;
+}
+.positive {
+  color: #29ba55;
+}
+.negative {
+  color: #e94f44;
+}
+.bold {
+  font-weight: 700;
+  font-size: 1.07em;
+}
+.icon {
+  font-size: 1.08em;
+}
+.copied {
+  color: #2cc642;
+  margin-left: 5px;
+  font-size: 0.95em;
+}
+.highlight {
+  background: #fffae6;
+  border-radius: 9px;
+  padding: 3px 12px;
+}
+.error {
+  color: #c1272d;
+  text-decoration: line-through;
+  font-weight: 600;
+}

@@ -1,0 +1,51 @@
+.button {
+  background: transparent;
+  color: #ccc;
+}
+.primary {
+  background: #22314d;
+  color: #6ccfff;
+}
+.primary:hover,
+.primary:focus-visible {
+  background: #4591e6;
+  color: #fff;
+}
+.outline {
+  border: 1.5px solid #6ccfff;
+  background: #23262b;
+  color: #6ccfff;
+}
+.outline:hover,
+.outline:focus-visible {
+  background: #293c5b;
+  color: #fff;
+}
+.danger {
+  background: #3b2121;
+  color: #ff6262;
+}
+.danger:hover,
+.danger:focus-visible {
+  background: #ff6262;
+  color: #fff;
+}
+.ghost {
+  background: transparent;
+  color: #bbb;
+}
+.ghost:hover,
+.ghost:focus-visible {
+  background: #32343c;
+  color: #fff;
+}
+.loading {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.spinner {
+  font-size: 1.2em;
+}
+.sm { width: 28px; height: 28px; font-size: 16px; }
+.md { width: 36px; height: 36px; font-size: 20px; }
+.lg { width: 48px; height: 48px; font-size: 26px; }

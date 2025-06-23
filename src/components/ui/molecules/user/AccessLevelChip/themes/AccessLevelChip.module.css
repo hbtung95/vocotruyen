@@ -1,0 +1,10 @@
+
+---
+
+### **themes/AccessLevelChip.module.css**
+
+```css
+.chip {
+  /* Tuỳ chọn hiệu ứng gradient, border, shadow riêng */
+  transition: box-shadow 0.2s;
+}

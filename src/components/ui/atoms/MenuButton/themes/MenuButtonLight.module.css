@@ -1,0 +1,55 @@
+.button {
+  border: none;
+  background: #fff;
+  color: #1976d2;
+  cursor: pointer;
+  transition: background 0.16s, color 0.16s;
+}
+.primary {
+  background: #e3f2fd;
+}
+.primary:hover,
+.primary:focus-visible {
+  background: #1976d2;
+  color: #fff;
+}
+.outline {
+  border: 1.5px solid #1976d2;
+  background: #fff;
+}
+.outline:hover,
+.outline:focus-visible {
+  background: #e3f2fd;
+  color: #0d47a1;
+}
+.ghost {
+  background: transparent;
+  color: #222;
+}
+.ghost:hover,
+.ghost:focus-visible {
+  background: #f4f7fa;
+}
+.sm {
+  height: 28px;
+  font-size: 13px;
+  padding: 0 10px;
+}
+.md {
+  height: 36px;
+  font-size: 15px;
+  padding: 0 14px;
+}
+.lg {
+  height: 48px;
+  font-size: 18px;
+  padding: 0 22px;
+}
+.open {
+  background: #1976d2;
+  color: #fff;
+}
+.caret {
+  font-size: 1.1em;
+  transition: transform 0.2s;
+}

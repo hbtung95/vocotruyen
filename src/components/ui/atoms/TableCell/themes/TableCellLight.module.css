@@ -1,0 +1,64 @@
+.cell {
+  border-bottom: 1px solid #e6eaf0;
+  background: #fff;
+  color: #23262b;
+  transition: background 0.16s;
+}
+.header {
+  font-weight: 600;
+  background: #f4f7fa;
+  color: #007aff;
+  text-transform: none;
+}
+.sm {
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.md {
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.lg {
+  font-size: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.text {
+  font-variant-numeric: normal;
+}
+.number {
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+.icon {
+  width: 34px;
+  text-align: center;
+}
+.status {
+  font-weight: 500;
+}
+.action {
+  width: 60px;
+  text-align: center;
+}
+.sortable {
+  cursor: pointer;
+}
+.sorted {
+  color: #1565c0;
+}
+.sortIcon {
+  font-size: 1em;
+  margin-left: 0.2em;
+}

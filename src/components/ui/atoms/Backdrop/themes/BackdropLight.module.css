@@ -1,0 +1,9 @@
+.backdrop {
+  transition: opacity 0.2s;
+}
+
+.backdropGlass {
+  /* Hiệu ứng glass MacOS */
+  backdrop-filter: blur(8px) saturate(150%);
+  -webkit-backdrop-filter: blur(8px) saturate(150%);
+}

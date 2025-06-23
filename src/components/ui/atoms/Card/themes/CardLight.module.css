@@ -1,0 +1,4 @@
+.card {
+  /* Có thể thêm hiệu ứng glass, shadow, border riêng nếu muốn */
+  box-shadow: 0 2px 8px rgba(10,132,255,0.06);
+}

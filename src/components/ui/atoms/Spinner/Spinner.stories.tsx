@@ -1,19 +1,14 @@
-import { render, screen } from "@testing-library/react";
+import type { Meta, StoryObj } from "@storybook/react";
 import { Spinner } from "./Spinner";
 
-describe("Spinner", () => {
-  it("renders with label", () => {
-    render(<Spinner label="Đang xử lý..." />);
-    expect(screen.getByText("Đang xử lý...")).toBeInTheDocument();
-  });
+const meta: Meta<typeof Spinner> = {
+  title: "Atoms/Spinner",
+  component: Spinner,
+  tags: ["autodocs"],
+};
+export default meta;
 
-  it("has role status and aria-busy", () => {
-    render(<Spinner />);
-    expect(screen.getByRole("status")).toHaveAttribute("aria-busy", "true");
-  });
+type Story = StoryObj<typeof Spinner>;
 
-  it("can hide label", () => {
-    render(<Spinner hideLabel />);
-    expect(screen.queryByText("Đang tải...")).not.toBeInTheDocument();
-  });
-});
+export const Default: Story = { args: {} };
+export const Large: Story = { args: { size: "lg", label: "Loading lớn..." } };

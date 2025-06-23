@@ -1,0 +1,52 @@
+.exportWrap {
+  display: inline-block;
+  position: relative;
+}
+.exportBtn {
+  background: #f5f8ff;
+  border: 1px solid #ccd2e3;
+  border-radius: 7px;
+  padding: 7px 18px 7px 13px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 500;
+  min-width: 90px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.exportBtn:disabled {
+  background: #f1f1f5;
+  color: #bbb;
+  cursor: not-allowed;
+}
+.menuPopup {
+  position: absolute;
+  min-width: 170px;
+  background: #fff;
+  border: 1px solid #e2e8f2;
+  border-radius: 11px;
+  box-shadow: 0 6px 24px rgba(0,20,40,0.14);
+  z-index: 1101;
+  padding: 7px 0;
+  margin-top: 8px;
+  right: 0;
+}
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 18px;
+  font-size: 1em;
+  color: #283b7c;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.14s;
+}
+.menuItem:hover {
+  background: #e3eefd;
+  color: #1677ff;
+}
+.selectCheckbox {
+  margin-right: 9px;
+}

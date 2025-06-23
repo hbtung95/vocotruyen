@@ -1,0 +1,28 @@
+.dot {
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.04);
+  transition: box-shadow 0.2s;
+}
+.success {
+  background: #27c16e;
+  border-color: #14a554;
+}
+.warning {
+  background: #ffa726;
+  border-color: #ff9800;
+}
+.error {
+  background: #e53935;
+  border-color: #c62828;
+}
+.info {
+  background: #2196f3;
+  border-color: #1976d2;
+}
+.offline {
+  background: #b0b0b0;
+  border-color: #888;
+}
+.neutral {
+  background: #e0e0e0;
+  border-color: #bdbdbd;
+}

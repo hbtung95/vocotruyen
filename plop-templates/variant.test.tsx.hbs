@@ -1,0 +1,22 @@
+import { render, screen, fireEvent } from "@testing-library/react";
+import {{entity}}{{variant}} from "./{{entity}}{{variant}}";
+
+describe("{{entity}}{{variant}}", () => {
+  it("renders name and avatar", () => {
+    render(<{{entity}}{{variant}} id="1" name="Test" avatarUrl="test.jpg" />);
+    expect(screen.getByText("Test")).toBeInTheDocument();
+    expect(screen.getByAltText("Test")).toBeInTheDocument();
+  });
+
+  it("shows rank if provided", () => {
+    render(<{{entity}}{{variant}} id="2" name="B" avatarUrl="b.jpg" rank="A" />);
+    expect(screen.getByText("A")).toBeInTheDocument();
+  });
+
+  it("handles onClick", () => {
+    const fn = jest.fn();
+    render(<{{entity}}{{variant}} id="3" name="C" avatarUrl="c.jpg" onClick={fn} />);
+    fireEvent.click(screen.getByText("C"));
+    expect(fn).toHaveBeenCalled();
+  });
+});

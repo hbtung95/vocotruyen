@@ -1,0 +1,27 @@
+.dot {
+  box-shadow: 0 0 0 1.5px #23262b;
+  color: #fff;
+}
+.accent {
+  background: #ff477c;
+}
+.error {
+  background: #ff6262;
+}
+.warning {
+  background: #ffdb8e;
+  color: #473b00;
+}
+.info {
+  background: #6ccfff;
+}
+.success {
+  background: #56ef9b;
+}
+.neutral {
+  background: #44454a;
+  color: #fff;
+}
+.outlined {
+  border: 1.5px solid #23262b;
+}

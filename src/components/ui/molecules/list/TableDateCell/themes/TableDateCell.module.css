@@ -1,0 +1,31 @@
+.dateCell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 74px;
+  padding: 3px 0;
+  font-size: 0.99em;
+  color: #2b3550;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+.icon {
+  font-size: 1.13em;
+  color: #2272e6;
+}
+.highlight {
+  background: #fffae6;
+  color: #e78c0c;
+  border-radius: 8px;
+  padding: 3px 10px;
+}
+.overdue {
+  color: #e94f44;
+  font-weight: 600;
+}
+.tooltip {
+  font-size: 0.95em;
+  color: #8296c7;
+  margin-left: 8px;
+}

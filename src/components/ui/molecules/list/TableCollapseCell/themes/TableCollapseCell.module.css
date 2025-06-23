@@ -1,0 +1,50 @@
+.collapseCell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 28px;
+  padding: 4px 0;
+  font-size: 1.07em;
+  font-weight: 500;
+  color: #2c3854;
+  user-select: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: background 0.17s;
+  outline: none;
+}
+.arrow {
+  display: inline-block;
+  width: 18px;
+  text-align: center;
+  font-size: 1.11em;
+  color: #7a97e1;
+  transition: transform 0.20s;
+}
+.arrowExpanded {
+  transform: rotate(90deg);
+}
+.icon {
+  font-size: 1.09em;
+}
+.highlight {
+  background: #ecfff4;
+  border-radius: 8px;
+  color: #199943;
+}
+.disabled {
+  opacity: 0.45;
+  pointer-events: none;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+}
+.detailRow {
+  background: #f8fbff;
+  transition: max-height 0.22s, padding 0.22s;
+  overflow: hidden;
+}

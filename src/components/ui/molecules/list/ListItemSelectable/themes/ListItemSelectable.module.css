@@ -1,0 +1,15 @@
+
+---
+
+### **themes/ListItemSelectable.module.css**
+
+```css
+.selectable {
+  /* Hiệu ứng glass nhẹ cho list selectable */
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.18);
+  transition: background 0.2s;
+}
+.checkbox {
+  accent-color: #1677ff; /* Accent màu chủ đạo */
+}

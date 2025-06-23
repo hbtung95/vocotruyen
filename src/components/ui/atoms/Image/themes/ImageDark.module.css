@@ -1,0 +1,14 @@
+.wrapper {
+  background: #23262b;
+}
+.img {
+  border-radius: 0.5rem;
+}
+.glass {
+  backdrop-filter: blur(2.5px) saturate(140%);
+  -webkit-backdrop-filter: blur(2.5px) saturate(140%);
+}
+.fallback {
+  background: #282b31;
+  color: #65686c;
+}

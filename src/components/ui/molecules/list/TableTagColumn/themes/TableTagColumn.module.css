@@ -1,0 +1,39 @@
+.tagCell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-height: 26px;
+  align-items: center;
+  padding: 2px 0;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  background: #eef6ff;
+  color: #225ecc;
+  border-radius: 8px;
+  padding: 2px 10px;
+  font-size: 0.96em;
+  font-weight: 500;
+  gap: 5px;
+  line-height: 1.44;
+  box-shadow: 0 1px 4px rgba(22,80,220,0.07);
+  transition: background 0.13s;
+  cursor: default;
+  max-width: 142px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tag[aria-label] {
+  cursor: help;
+}
+.icon {
+  font-size: 1.03em;
+  margin-right: 3px;
+}
+.more {
+  background: #e0e5ee;
+  color: #6c7499;
+  font-weight: 400;
+}

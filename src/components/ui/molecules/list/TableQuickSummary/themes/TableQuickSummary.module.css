@@ -1,0 +1,33 @@
+.summaryRow {
+  display: flex;
+  align-items: stretch;
+  background: #f6fafd;
+  border-top: 1.5px solid #e2e4f0;
+  min-height: 38px;
+  font-size: 1.04em;
+  font-weight: 500;
+  padding: 0 7px;
+  border-radius: 0 0 11px 11px;
+  color: #194574;
+}
+.cell {
+  flex: 1 1 0%;
+  padding: 8px 12px 6px 8px;
+  min-width: 54px;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-right: 1px solid #eef2fa;
+}
+.cell:last-child {
+  border-right: none;
+}
+.left { text-align: left; }
+.center { text-align: center; }
+.right { text-align: right; }
+.loading {
+  opacity: 0.7;
+  filter: blur(1px);
+  pointer-events: none;
+}

@@ -1,0 +1,12 @@
+.fieldset {
+  background: #fff;
+  transition: box-shadow 0.18s;
+}
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.legend {
+  margin-left: 1rem;
+  padding: 0 0.5rem;
+}

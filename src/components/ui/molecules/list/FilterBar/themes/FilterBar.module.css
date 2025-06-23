@@ -1,0 +1,28 @@
+.filterBar {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  padding: 16px 12px 10px 12px;
+  background: rgba(250, 250, 255, 0.93);
+  border-radius: 12px;
+  border: 1px solid #e8eaf6;
+  box-shadow: 0 2px 14px rgba(70,80,120,0.08);
+  flex-wrap: wrap;
+}
+.filterField {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 140px;
+}
+.filterInput, .filterSelect {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  font-size: 1em;
+  min-width: 110px;
+}
+.btnGroup {
+  display: flex;
+  gap: 8px;
+}

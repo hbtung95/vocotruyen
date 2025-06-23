@@ -1,0 +1,90 @@
+.actionCell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 44px;
+  padding: 2px 0;
+  font-size: 1em;
+  user-select: none;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.actionBtn {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background: none;
+  color: #234585;
+  font-size: 1.05em;
+  font-weight: 500;
+  padding: 3px 7px;
+  border-radius: 6px;
+  transition: background 0.13s, color 0.13s;
+  cursor: pointer;
+  gap: 4px;
+}
+.actionBtn:disabled,
+.actionBtn.disabled {
+  color: #c4c9d1;
+  background: none;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.actionBtn:not(:disabled):hover {
+  background: #e7f1ff;
+  color: #1a73e8;
+}
+.highlight {
+  background: #fafdff;
+  border-radius: 8px;
+  padding: 2px 8px;
+}
+.menuWrap {
+  position: relative;
+  display: inline-block;
+}
+.menuPopup {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  min-width: 120px;
+  background: #fff;
+  border: 1px solid #e2e8f2;
+  border-radius: 11px;
+  box-shadow: 0 6px 24px rgba(0,20,40,0.10);
+  z-index: 1102;
+  padding: 6px 0;
+}
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 17px;
+  font-size: 1em;
+  color: #273e74;
+  background: none;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: background 0.12s;
+}
+.menuItem:not(:disabled):hover {
+  background: #e3f0ff;
+  color: #1a73e8;
+}
+.menuItem:disabled {
+  color: #c4c9d1;
+  background: none;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.menuIcon {
+  margin-right: 2px;
+  font-size: 1.07em;
+}
+.menuLabel {
+  font-size: 1.06em;
+  font-weight: 600;
+  color: #47599d;
+}

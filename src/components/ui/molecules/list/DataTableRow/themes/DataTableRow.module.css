@@ -1,0 +1,13 @@
+.dataTableRow {
+  transition: background 0.15s;
+}
+.selected {
+  background: rgba(36, 99, 235, 0.08);
+}
+.highlight {
+  background: rgba(253, 230, 138, 0.14);
+}
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}

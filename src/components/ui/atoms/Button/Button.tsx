@@ -3,50 +3,80 @@ import clsx from "clsx";
 import type { ButtonProps } from "./Button.types";
 
 /**
- * Button component chuẩn Liquid Glass style MacOS 26 Tahoe.
- *
- * @component
- * @param {ButtonProps} props
+ * Button – Atom đa năng với variant, size, icon, loading, shape, fullWidth
  */
 export const Button: React.FC<ButtonProps> = ({
   children,
   variant = "primary",
-  disabled = false,
+  size = "md",
+  iconLeft,
+  iconRight,
   loading = false,
-  onClick,
+  disabled = false,
+  fullWidth = false,
+  shape = "rounded",
   className,
   ...rest
 }) => {
-  // Style chính sử dụng Tailwind + token
-  const baseClass = "inline-flex items-center justify-center rounded-xl font-medium focus:outline-none transition-all select-none";
-  const variantClass = {
-    primary: "bg-accent/80 text-white hover:bg-accent/100 active:bg-accent/60 shadow-lg backdrop-blur-xl",
-    secondary: "bg-white/20 text-accent hover:bg-white/40 active:bg-white/30 border border-accent/30",
-    ghost: "bg-transparent text-accent hover:bg-accent/10 active:bg-accent/20"
-  }[variant];
+  const sizeClass =
+    size === "sm"
+      ? "px-3 py-1 text-sm"
+      : size === "lg"
+      ? "px-5 py-3 text-lg"
+      : "px-4 py-2 text-base";
 
-  // Nếu dùng theme riêng: import CSS module ở đây
+  const shapeClass =
+    shape === "pill"
+      ? "rounded-full"
+      : shape === "square"
+      ? "rounded-md"
+      : "rounded-xl";
+
+  const variantClass = {
+    primary: "bg-accent text-white hover:bg-accent/90",
+    secondary: "bg-gray-100 text-accent hover:bg-accent/10 border border-accent/20",
+    outline: "border border-accent text-accent bg-transparent hover:bg-accent/10",
+    ghost: "bg-transparent text-accent hover:bg-accent/5",
+    link: "bg-transparent underline text-accent hover:text-accent/80 p-0",
+  }[variant];
 
   return (
     <button
       type="button"
-      className={clsx(baseClass, variantClass, { "opacity-50 pointer-events-none": disabled || loading }, className)}
+      className={clsx(
+        "inline-flex items-center justify-center font-medium transition focus:outline-none focus:ring-2 focus:ring-accent",
+        sizeClass,
+        shapeClass,
+        variantClass,
+        fullWidth && "w-full",
+        disabled && "opacity-60 cursor-not-allowed pointer-events-none",
+        className
+      )}
       disabled={disabled || loading}
-      aria-disabled={disabled || loading}
-      aria-label={rest['aria-label']}
-      onClick={onClick}
+      aria-busy={loading}
       {...rest}
     >
       {loading && (
         <span className="mr-2">
-          {/* Spinner: Có thể tạo spinner riêng hoặc dùng 1 atom khác */}
-          <svg className="animate-spin h-4 w-4 text-white" viewBox="0 0 24 24" fill="none">
-            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
-            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"/>
+          {/* Spinner mini */}
+          <svg className="animate-spin" width={16} height={16} viewBox="0 0 24 24" fill="none">
+            <circle
+              className="opacity-20"
+              cx="12" cy="12" r="10"
+              stroke="currentColor" strokeWidth="4"
+            />
+            <path
+              d="M22 12a10 10 0 0 0-10-10"
+              stroke="currentColor" strokeWidth="4"
+              strokeLinecap="round"
+              className="opacity-80"
+            />
           </svg>
         </span>
       )}
+      {iconLeft && <span className="mr-2">{iconLeft}</span>}
       {children}
+      {iconRight && <span className="ml-2">{iconRight}</span>}
     </button>
   );
 };

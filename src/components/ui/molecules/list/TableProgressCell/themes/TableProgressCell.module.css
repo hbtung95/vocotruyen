@@ -1,0 +1,69 @@
+.progressCell {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 82px;
+  padding: 2px 0;
+  font-size: 1em;
+  font-weight: 500;
+  user-select: none;
+}
+.label {
+  min-width: 28px;
+  font-size: 0.97em;
+}
+.barWrap {
+  background: #eaf0fa;
+  border-radius: 8px;
+  width: 58px;
+  height: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.bar {
+  height: 100%;
+  border-radius: 7px;
+  background: #2979ff;
+  transition: width 0.18s;
+}
+.success { background: #31ba63 !important; }
+.error { background: #e94f44 !important; }
+.circle {
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  position: relative;
+}
+.circleSvg {
+  width: 34px;
+  height: 34px;
+  transform: rotate(-90deg);
+}
+.circleTrack {
+  stroke: #e4eaf3;
+}
+.circleBar {
+  stroke: #2979ff;
+  transition: stroke 0.18s;
+}
+.successStroke { stroke: #31ba63 !important; }
+.errorStroke { stroke: #e94f44 !important; }
+.percentLabel {
+  position: absolute;
+  left: 0; top: 0;
+  width: 34px; height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.96em;
+  color: #23306d;
+  font-weight: 600;
+}
+.icon {
+  font-size: 1.17em;
+}
+.highlight {
+  background: #f6ffe8;
+  border-radius: 10px;
+  padding: 3px 14px;
+}

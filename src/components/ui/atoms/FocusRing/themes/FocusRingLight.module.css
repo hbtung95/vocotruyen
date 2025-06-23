@@ -1,0 +1,6 @@
+.focusRing {
+  display: inline-block;
+  /* border-radius mặc định cho khối bọc */
+  border-radius: 8px;
+  /* Có thể thêm transition ở đây nếu muốn */
+}

@@ -29,3 +29,4 @@ export const Rounded = () => <CheckboxRounded label="Bo tròn" />;
 export const Disabled: Story = {
   args: { label: "Vô hiệu hóa", disabled: true },
 };
+

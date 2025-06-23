@@ -28,3 +28,4 @@ export const Error: Story = {
 };
 export const Indeterminate = () => <ProgressBarIndeterminate />;
 export const Circle = () => <ProgressBarCircle value={75} showLabel color="accent" />;
+

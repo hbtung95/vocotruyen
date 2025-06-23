@@ -1,0 +1,26 @@
+.card {
+  /* Glassmorphism effect */
+  background: rgba(255,255,255,0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.card.active {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  border: 2px solid #0A84FF;
+}
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.info { display: flex; flex-direction: column; }
+.name { font-size: 1.25rem; font-weight: 600; }
+.club, .rank, .medals { font-size: 1rem; color: #666; }
+.stats { margin: 0; padding: 0; list-style: none; font-size: 0.95rem; }
